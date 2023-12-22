@@ -1,0 +1,21 @@
+Options +FollowSymLinks
+Options -Indexes
+RewriteEngine On
+
+RewriteRule ^login$ login.php?page=login [L]
+RewriteRule ^forgot-password$ forgot-password.php?page=forgot-password [L]
+RewriteRule ^change-password$ change-password.php [L]
+RewriteRule ^register$ register.php?page=register [L]
+RewriteRule ^dashboard$ dashboard.php?page=dashboard [L]
+RewriteRule ^diagnosis$ diagnosis.php?page=diagnosis [L]
+RewriteRule ^data-diagnosis$ data-diagnosis.php?page=data-diagnosis [L]
+RewriteRule ^profil$ profil.php?page=profil [L]
+RewriteRule ^panduan$ panduan.php?page=panduan [L]
+RewriteRule ^data-pengguna$ data-pengguna.php?page=data-pengguna [L]
+RewriteRule ^export$ export-data-diagnosis.php [L]
+RewriteRule ^404$ 404-page.php?page=404 [L]
+
+RewriteCond %{REQUEST_URI} !^404
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ 404 [L]

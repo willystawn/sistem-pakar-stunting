@@ -1,0 +1,72 @@
+#password {
+  border-right: none;
+}
+
+#konfirmasi-password {
+  border-right: none;
+}
+
+.btn-rounded {
+  border-top-right-radius: 30px !important;
+  border-bottom-right-radius: 30px !important;
+  border-left: none;
+  border-color: #d1d3e2;
+}
+
+/* Style show/hide password buttons */
+.btn-rounded:focus,
+.btn-rounded:active {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* Hide "hide password" button by default */
+#hide-password-btn {
+  display: none;
+}
+
+#hide-password-btn2 {
+  display: none;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+#content {
+  margin-top: 100px;
+}
+
+.sidebar-margin-left {
+  margin-left: 100px;
+}
+
+#tidakStuntingRange,
+#stuntingBeratRange,
+#stuntingRinganRange,
+#giziBurukRange,
+#giziKurangRange,
+#giziBaikRange,
+#giziBerisikoLebihRange,
+#giziLebihRange,
+#giziObesitasRange {
+  font-size: 11px;
+}
+
+@media (max-width: 767px) {
+  /* Atur font-size pada layar mobile */
+  #tidakStuntingRange,
+  #stuntingBeratRange,
+  #stuntingRinganRange {
+    font-size: 9px;
+  }
+
+  #giziBurukRange,
+  #giziKurangRange,
+  #giziBaikRange,
+  #giziBerisikoLebihRange,
+  #giziLebihRange,
+  #giziObesitasRange {
+    font-size: 7px;
+  }
+}
